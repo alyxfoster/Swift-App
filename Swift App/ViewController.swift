@@ -17,8 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lowerTextField: UITextField!
 
     @IBAction func buttonTapped(_ sender: Any) {
-        print(upperTextField.text!)
-        print(lowerTextField.text!)
+        coolLabel.text = "Answer is...\(Double(upperTextField.text!)! + Double(lowerTextField.text!)!)"
     }
     
     override func viewDidLoad() {
